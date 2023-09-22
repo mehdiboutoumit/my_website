@@ -7,6 +7,9 @@ import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
 
+
+const Experience = lazy(() => import('./pages/Experience'));
+const Education = lazy(() => import('./pages/Education'));
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
@@ -23,6 +26,8 @@ function App() {
 					<AppHeader />
 					<Suspense fallback={""}>
 						<Routes>
+							<Route path="experience" element={<Experience />} />
+							<Route path="education" element={<Education />} />
 							<Route path="/my_website" element={<Home />} />
 							<Route path="projects" element={<Projects />} />
 							<Route
