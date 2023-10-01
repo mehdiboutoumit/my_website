@@ -37,9 +37,9 @@ const HireMeModal = ({ onClose, onRequest }) => {
 						</div>
 						<div className="modal-body p-5 w-full h-full">
 							<form
-								onSubmit={(e) => {
-									e.preventDefault();
-								}}
+							action='https://formsubmit.co/mehdiboutoumit03@gmail.com'
+							method='post'
+								
 								className="max-w-xl m-4 text-left"
 							>
 								<div className="">
@@ -58,7 +58,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="email"
 										name="email"
-										type="text"
+										type="email"
 										required=""
 										placeholder="Email"
 										aria-label="Email"
@@ -89,6 +89,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="message"
 										name="message"
+										type="text"
 										cols="14"
 										rows="6"
 										aria-label="Details"
@@ -97,7 +98,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								</div>
 
 								<div className="mt-6 pb-4 sm:pb-1">
-									<span
+									<button
 										onClick={onClose}
 										type="submit"
 										className="px-4
@@ -112,7 +113,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										aria-label="Submit Request"
 									>
 										<Button title="Send Request" />
-									</span>
+									</button>
 								</div>
 							</form>
 						</div>
