@@ -1,12 +1,14 @@
 import { Card } from '@mui/material'
 import React from 'react'
 import ExperienceCard from '../components/Experience/ExperienceCard'
+import logo212 from '../images/logo_212.png';
+import logoA2S from '../images/logo_A2s.png';
 
 function Experience() {
   const experienceData1 = {
-    companyLogo: 'path/to/company-logo.png',
-    position: 'Web Developerr',
-    date: 'June 2023 - Aout 2023',
+    companyLogo: logo212,
+    position: 'Web Developer',
+    date: '212 Consulting Agency | June 2023 - Aout 2023',
     description: `As a first-year intern, I actively contributed to the development of a dynamic web application aimed at revolutionizing restaurant management. My primary focus was on creating a comprehensive system that streamlines the process of managing restaurant menus and staff.
 
     Key Contributions:
@@ -18,9 +20,9 @@ function Experience() {
     - Frontend and Backend Development: Engaged in both frontend and backend development, honing skills in technologies such as React and Node.js. This comprehensive approach equipped me with a well-rounded understanding of full-stack development.`,
   };
   const experienceData2 = {
-    companyLogo: 'path/to/company-logo.png',
+    companyLogo: logoA2S,
     position: ' Head of IT Consulting Cell',
-    date: 'June 2023 - Present',
+    date: 'A2S Junior Entreprise of INPT | June 2023 - Present',
     description: `Missions : 
     - Managing the technical needs of the Junior Enterprise
     - Collaborating with the IT Consulting team members to effectively allocate tasks and responsibilities based on their individual skills and interests, promoting a dynamic and engaged team environment.

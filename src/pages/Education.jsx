@@ -6,8 +6,12 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
+import logo_CPGE from "../images/logo_CPGE.jpeg";
+import logo_INPT from "../images/Logo_inpt.png";
+import logo_HS from "../images/logo_highschool.jpg";
 
 import Typography from '@mui/material/Typography';
+import { Avatar } from '@mui/material';
 
  const Education = () =>{
   return (
@@ -29,6 +33,7 @@ import Typography from '@mui/material/Typography';
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <img src={logo_INPT}></img>
           <Typography variant="h6" component="span">
             INPT Rabat
           </Typography>
@@ -50,8 +55,9 @@ import Typography from '@mui/material/Typography';
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
+        <TimelineContent sx={{ py: '12px', px: 2, display: 'flex', alignItems: 'center' }}>
+        <img src={logo_CPGE} style={{ marginRight: '10px'}}></img>
+          <Typography variant="h6" component="span"> 
             CPGE Bab Essahra Guelmim
           </Typography>
           <Typography>PSI (Physics and Inducstrial Science) <br></br> National Rank : 19/911</Typography>
@@ -74,6 +80,7 @@ import Typography from '@mui/material/Typography';
           <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <img src={logo_HS}></img>
           <Typography variant="h6" component="span">
             Mohamed V High School Guelmim
           </Typography>

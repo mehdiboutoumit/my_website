@@ -1,20 +1,21 @@
 import React from 'react';
-import { Card, CardContent, Typography, CardHeader, Avatar } from '@mui/material';
+import { Card, CardContent, Typography, CardHeader } from '@mui/material';
+
 
 const ExperienceCard = (props) => {
-  const { companyLogo, position, date, description } = props;
+  const { companyLogo,company, position, date, description } = props;
 
   return (
-    <Card>
+    <Card className='card bg-primary hover-shadow'>
       <CardHeader
         avatar={
-          <Avatar src={companyLogo} alt="Company Logo" />
+          <img style={{ width: '150px', height: '150px', objectFit: 'contain' }} className='rounded-circle' src={companyLogo} alt="Company Logo" />
         }
         title={position}
         subheader={date}
       />
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" color="textPrimary" component="p">
           {description}
         </Typography>
       </CardContent>
