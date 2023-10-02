@@ -1,6 +1,6 @@
 {
 	"name": "mehdiboutoumit-portfolio",
-	"homepage": "https://mehdiboutoumit.github.io/my_website",
+	"homepage": "https://mboutoumit.vercel.app/",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
