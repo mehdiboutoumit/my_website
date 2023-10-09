@@ -22,6 +22,7 @@ import { Avatar } from '@mui/material';
           align="right"
           variant="body2"
           color="text.secondary"
+          className='text-secondary-dark dark:text-secondary-light'
         >
          2022 - 2025
         </TimelineOppositeContent>
@@ -34,10 +35,10 @@ import { Avatar } from '@mui/material';
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <img src={logo_INPT}></img>
-          <Typography variant="h6" component="span">
+          <Typography variant="h6" component="span" className='text-secondary-dark dark:text-secondary-light'>
             INPT Rabat
           </Typography>
-          <Typography>Engineer's degree, Advanced Software Engineering for Digital Services (ASEDS)</Typography>
+          <Typography className='text-secondary-dark dark:text-secondary-light'>Engineer's degree, Advanced Software Engineering for Digital Services (ASEDS)</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -45,6 +46,7 @@ import { Avatar } from '@mui/material';
           sx={{ m: 'auto 0' }}
           variant="body2"
           color="text.secondary"
+          className='text-secondary-dark dark:text-secondary-light'
         >
          2020 - 2022
         </TimelineOppositeContent>
@@ -57,10 +59,10 @@ import { Avatar } from '@mui/material';
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2, display: 'flex', alignItems: 'center' }}>
         <img src={logo_CPGE} style={{ marginRight: '10px'}}></img>
-          <Typography variant="h6" component="span"> 
+          <Typography variant="h6" component="span" className='text-secondary-dark dark:text-secondary-light'> 
             CPGE Bab Essahra Guelmim
           </Typography>
-          <Typography>PSI (Physics and Inducstrial Science) <br></br> National Rank : 19/911</Typography>
+          <Typography className='text-secondary-dark dark:text-secondary-light'>PSI (Physics and Inducstrial Science) <br></br> National Rank : 19/911</Typography>
         </TimelineContent>
       </TimelineItem>
 
@@ -69,6 +71,7 @@ import { Avatar } from '@mui/material';
           sx={{ m: 'auto 0' }}
           variant="body2"
           color="text.secondary"
+          className='text-secondary-dark dark:text-secondary-light'
         >
         2017 - 2020
         </TimelineOppositeContent>
@@ -81,10 +84,10 @@ import { Avatar } from '@mui/material';
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
         <img src={logo_HS}></img>
-          <Typography variant="h6" component="span">
+          <Typography variant="h6" component="span" className='text-secondary-dark dark:text-secondary-light'>
             Mohamed V High School Guelmim
           </Typography>
-          <Typography>Baccalaureate in Physics</Typography>
+          <Typography className='text-secondary-dark dark:text-secondary-light'>Baccalaureate in Physics</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>

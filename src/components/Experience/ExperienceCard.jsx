@@ -15,7 +15,7 @@ const ExperienceCard = (props) => {
         subheader={date}
       />
       <CardContent>
-        <Typography variant="body2" color="textPrimary" component="p">
+        <Typography  variant="body2" color="textPrimary" component="pre">
           {description}
         </Typography>
       </CardContent>
