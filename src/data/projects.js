@@ -2,6 +2,7 @@
 import digi from '../images/digirestau.png';
 import restaumanage from '../images/Restaumanage.png';
 import BabyTrack from '../images/BabyTrack.png';
+import a2s from '../images/A2S.png';
 
 import warehouse from '../images/warehouse.png';
 import plagiat from '../images/plagiat.png';
@@ -18,6 +19,12 @@ export const projectsData = [
 			tags: 'Full-Stack Development',
 		},
 		url : "agence212.ma"
+	},{
+		id: 6,
+		title: 'A2S, the Junior Entreprise of INPT Rabat, official website',
+		category: 'Web Application',
+		img: a2s,
+		url : "http://a2s.42web.io/"
 	},
 	{
 		id: 2,
