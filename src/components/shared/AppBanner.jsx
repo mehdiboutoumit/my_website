@@ -3,11 +3,27 @@ import { FiArrowDownCircle } from 'react-icons/fi';
 import developerLight from '../../images/dev_svg.gif';
 import developerDark from '../../images/dev_svg.gif';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import './Style.css';
 
 const AppBanner = () => {
 	const [activeTheme] = useThemeSwitcher();
 
+ const words = ['web development', 'Java programming','scrum','Database adminstration', 'open source', 'software engineering'];
+
+	const [currentIndex, setCurrentIndex] = useState(0);
+  
+	useEffect(() => {
+	  const interval = setInterval(() => {
+		setCurrentIndex((currentIndex + 1) % words.length);
+	  }, 2000); // Change word every 2 seconds
+  
+	  return () => {
+		clearInterval(interval);
+	  };
+	}, [currentIndex]);
 	return (
+	<div>
 		<motion.section
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
@@ -37,7 +53,8 @@ const AppBanner = () => {
 					}}
 					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					A Software Engineering Student at INPT Rabat, Morocco
+					A Software Engineering Student at INPT Rabat, Morocco.
+					
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}
@@ -75,7 +92,19 @@ const AppBanner = () => {
 					alt="Developer"
 				/>
 			</motion.div>
+			
 		</motion.section>
+		<div className="fade-words text-center">
+					{words.map((word, index) => (
+						<span
+						key={index}
+						className={`word ${index === currentIndex ? 'show' : 'hide'}`}
+						>
+						{word}
+						</span>
+					))}
+		</div>
+	</div>
 	);
 };
 

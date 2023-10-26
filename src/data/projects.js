@@ -21,7 +21,7 @@ export const projectsData = [
 		url : "agence212.ma"
 	},{
 		id: 6,
-		title: 'A2S, the Junior Entreprise of INPT Rabat, official website',
+		title: 'The official website of the Junior Entreprise of INPT Engineering school',
 		category: 'Web Application',
 		img: a2s,
 		url : "http://a2s.42web.io/"
