@@ -24,7 +24,16 @@ My primary focus was on creating a comprehensive system that streamlines the pro
     
     - Frontend and Backend Development: Engaged in both frontend and backend development, honing skills in 
     technologies such as React and Node.js. This comprehensive approach equipped me with a well-rounded 
-    understanding of full-stack development.`,
+    understanding of full-stack development.
+    - Delivering web development and project management courses to junior members.
+
+    Key Contributions:
+	
+    Successfully completed the official website of the junior entreprise.
+    URL: http://a2s.42web.io/
+	
+    Developed a dynamic leaderboard for the club, fostering member engagement and encouraging excellence in their respective roles.
+    URL: https://a2s-leaderboard.vercel.app/`,
   };
   const experienceData2 = {
     companyLogo: logoA2S,
